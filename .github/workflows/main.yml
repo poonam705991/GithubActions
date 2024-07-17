@@ -1,0 +1,10 @@
+name: test_Branch_rule
+on:
+  label:
+    types: [created, edited]
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: echo "Branch altered!"
